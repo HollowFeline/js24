@@ -1,4 +1,4 @@
-/* // - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
 //   Вивести кожну змінну за допомогою: console.log , alert, document.write
 let str1 = "hello"
 let str2 = "owu"
@@ -36,22 +36,22 @@ console.log(age);
 
 // - Взяти змінні з завдання вище та зєднати їх в одну змінну (конкатинація).
 let summ = str1 + str2 + str3 + num1 + num2 + num3 + num4 + num5 + num6 + num7 + bool1 + bool2;
-console.log(summ); */
+console.log(summ);
 
-/* // - За допомогою prompt() отримати 3 числа. Привести їх до числа (Google "String to number JS"). Вивести їх в консоль.
+// - За допомогою prompt() отримати 3 числа. Привести їх до числа (Google "String to number JS"). Вивести їх в консоль.
 let num1 = +prompt();
 let num2 = +prompt();
 let num3 = +prompt();
 console.log(typeof(num1))
 console.log(typeof(num2))
-console.log(num3) */
+console.log(num3)
 
-/* // - За допомогою prompt() отримати 4 числа. Привести їх до числа за допомогою paeseInt. Додати їх всі мож собою і результат вивести в консоль.
+// - За допомогою prompt() отримати 4 числа. Привести їх до числа за допомогою paeseInt. Додати їх всі мож собою і результат вивести в консоль.
 let num1 = parseInt(prompt());
 let num2 = parseInt(prompt());
 let num3 = parseInt(prompt());
 let sum = num1 + num2 +num3
-console.log(sum) */
+console.log(sum)
 
 // - За допомогою prompt() отримати 3 числа з плаваючою точкою за допомогою parseFloat. 
 //   Просумувати їх. Отрманий результат записати в змінну result. Вивести цю змінну в консоль.
@@ -68,21 +68,30 @@ console.log(result)
 //   Перше число - це число яке будуть підносити до степеня. Друге число - це число яке являється степенню.
 //   За допомогою Math.pow (Google) піднести перше число в степінь другого числа.
 //   Example. Число 1 = 5. Число 2 = 2. Результат = 25 
+let baseNumber = prompt();
+let exponentNumber = prompt();
+console.log(Math.pow(baseNumber, exponentNumber))
+
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
-//   let a = 100; let b = '100'; let c = true;
+   let a = 100; let b = '100'; let c = true;
+    console.log(typeof(a));
+    console.log(typeof(b));
+    console.log(typeof(c));
+
 // - Поставет відповідний оператор в виразах що б вийшов відповідний результат.
 //   В однакових виразаї не використовувати однакові оператори!!!
-//     5 ? 6 -> true
-//     5 ? 6 -> false
-//     5 ? 6 -> false
-//     5 ? 6 -> false
-//     10 ? 10 -> true
-//     10 ? 10 -> true
-//     10 ? 10 -> false
-//     10 ? 10 -> false
-//     10 ? 10 -> false
-//     123 ? '123' -> false
-//     123 ? '123' -> true
+//     5 ? 6 -> true <
+//     5 ? 6 -> false ==
+//     5 ? 6 -> false ===
+//     5 ? 6 -> false >=
+//     10 ? 10 -> true <=
+//     10 ? 10 -> true ===
+//     10 ? 10 -> false <
+//     10 ? 10 -> false >
+//     10 ? 10 -> false !==
+//     123 ? '123' -> false ===
+//     123 ? '123' -> true ==
+
 
 // Додатково:
 // - Подивіться на наступні вирази і спробуйте вгадати яким буде вивід в консоль. Перевірте себе.
