@@ -112,3 +112,100 @@ console.log(Math.pow(baseNumber, exponentNumber))
 //   console.log(!!(3/'owu'));
 //   console.log((111 > 11 || 45 < 111) ||  !!'0');
 //   console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 ));
+
+//3.  Створіть змінні a6, a7, a8, a9, a10. Запишіть в них результати виразів:
+    
+    let a = 5 % 3
+    let a2 = 3 % 5
+    let a3 = 5 + '3'
+    let a4 = '5' - 3
+    let a5 = 75 + 'кг'
+    console.log(a)
+    console.log(a2)
+    console.log(a3)
+    console.log(a4)
+    console.log(a5)
+
+//     6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+//    Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
+
+let n = 3
+let m = 4
+k = Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2))
+console.log(k)
+
+// 10. Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    let str = "20";
+     let a = 5;
+     console.log(str + a);
+     console.log(str - a);
+     console.log(str * "2");
+     console.log(str / 2);
+
+// 1. Три різних числа вводяться через prompt().
+// За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)
+let num1 = parseInt(Math.random() * 10) 
+let num2 = parseInt(Math.random() * 10) 
+let num3 = parseInt(Math.random() * 10)
+
+if(num1 <= num2 && num1 <= num3 && num2 <= num3){
+    console.log(num1 + " " + num2 + " " + num3)
+} else if(num2 <= num1 && num2 <= num3 && num1 <= num3){
+    console.log(num2 + " " + num1 + " " + num3)
+} else if(num2 <= num1 && num2 <= num3 && num3 <= num1){
+    console.log(num2 + " " + num3 + " " + num1)
+} else if(num3 <= num1 && num3 <= num2 && num1 <= num2){
+    console.log(num3 + " " + num1 + " " + num2)
+} else if(num3 <= num1 && num3 <= num2 && num2 <= num1){
+    console.log(num3 + " " + num2 + " " + num1)
+} else console.log(num1 + " " + num3 + " " + num2)
+
+// 2.
+// Все параматры получаем с клавиатуры!!!!
+// Имитируем поведение пешехода на перекстке.
+// Если светофор зеленый - вывести "иди".
+// Если светофор желтый - вывести "подожди".
+// Если светофор красный - вывести "стой".
+// Если светофор в аварийном режиме вывести "делай что хочешь"!
+let color = prompt()
+switch(color){
+    case "red": 
+        console.log("Stop!")
+        break
+    case "yellow":
+        console.log("Ready")
+        break
+    case "green":
+        console.log("Go")
+        break
+    default: 
+        console.log("Do whatever you want!")
+}
+
+// 3
+// Все параметры получаем с клавиатуры!!!!(prompt , confirm)
+// Создать переменную isRoadClear которая характеризирует наличие на дороге машин.
+// Улучшаем предыдущее задание.
+// Если светофор зеленый и машин нет - вывести "иди".
+// Если светофор зеленый и машины есть  - вывести подожди пока нарушители проедут".
+// Если светофор желтый и машины есть - вывести "жди".
+// Если светофор желтый и машин нет - вывести "все рано жди".
+// Если светофор красный и машин нет- вывести "стой все рано".
+// Если светофор красный - и машины есть вывести "стой и жди".
+// Если светофор в аварийном режиме вывести "делай что хочешь"!
+
+let color = prompt()
+let isRoadClear = confirm("Дорога чиста?")
+switch(color){
+    case "red":
+        isRoadClear ? console.log("стой все рано") : console.log("стой и жди")
+        break
+    case "yellow":
+        isRoadClear ? console.log("все рано жди") : console.log("жди")
+        break
+    case "green":
+        isRoadClear ? console.log("иди") : console.log("подожди пока нарушители проедут")
+        break
+    default: 
+        console.log("делай что хочешь")
+}
