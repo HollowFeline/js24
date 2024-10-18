@@ -56,6 +56,10 @@ function nameNormalizator(name = ''){
     return normalName
 }
 
-console.log(nameNormalizator(n1))
-console.log(nameNormalizator(n2))
-console.log(nameNormalizator(n3))
+function nameNormalizatorPlus(name = ''){
+    return name.trim().split(/\s+/).join(' ')
+}
+
+console.log(nameNormalizatorPlus(n1))
+console.log(nameNormalizatorPlus(n2))
+console.log(nameNormalizatorPlus(n3))
