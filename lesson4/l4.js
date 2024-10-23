@@ -221,3 +221,45 @@ console.log(car)
 // --Створити 10 попелюшок , покласти їх в масив
 // --Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 // -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
+class Cinderella{
+    constructor(name, age, footSize){
+        this._name = name
+        this.age = age
+        this._footSize = footSize
+    }
+
+    get footSize(){
+        return this._footSize
+    }
+    set footSize(value){
+        this._footSize = value
+    }
+    get name(){
+        return this._name
+    }S
+}
+
+class Prince{
+    constructor(name, age, footSize){
+        this.name = name
+        this.age = age
+        this._footSize = footSize
+    }
+
+    get footSize(){
+        return this._footSize
+    }
+    set footSize(value){
+        this._footSize = value
+    }
+}
+let cinderellas = []
+cinderellas.push(new Cinderella('Anna', 18, 36))
+cinderellas.push(new Cinderella('Lena', 21, 34))
+cinderellas.push(new Cinderella('Vika', 18, 40))
+
+let prince = new Prince('Arthur', 19, 34)
+
+for (let index = 0; index < cinderellas.length; index++) {
+    if(prince.footSize === cinderellas[index].footSize) console.log(`${prince.name} find ${cinderellas[index].name}`)
+}
