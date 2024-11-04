@@ -16,12 +16,45 @@
     <br>
     <div>
         <h2 id="menu">Menu</h1>
-        <div id="menuItems" hidden = true>
-            <p>Страва</p>
-            <p>Страва1</p>
-            <p>Страва2</p>
-        </div>
+            <div id="menuItems" hidden = true>
+                <p>Страва</p>
+                <p>Страва1</p>
+                <p>Страва2</p>
+            </div>
     </div>
+
+    <div style="padding: 10px; background-color: aqua;">
+        <form action="" id="form1">
+            <input type="text" id="input1">
+        </form>
+        <form action="" id="form2">
+            <input type="text" id="input2">
+        </form>
+        <button onclick="getInfo()">Get info</button>
+    </div>
+    <div id="tableContainer"></div>
+
+     <input type="text" id="inputCensor" onkeyup="chekForCensorWords1()">
+
+    <div id="menu1"></div>
+    
+    <h1>Заголовок 1</h1>
+    <p>Текст розділу 1</p>
+
+    <h2>Заголовок 2</h2>
+    <p>Текст розділу 2</p>
+
+    <div style="padding: 10px; background-color: aqua;">
+        <a>Не одружений?</a>
+        <input type="checkbox" id="isMarriedFilter">
+        <a>Старше 29?</a>
+        <input type="checkbox" id="ageFilter">
+        <a>Живеш у Києві?</a>
+        <input type="checkbox" id="cityFilter">
+        <div id="output"></div>
+    </div>
+    
+    
     <script src="l5.js"></script>
 </body>
 </html>
